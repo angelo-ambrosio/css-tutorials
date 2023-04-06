@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.hidden{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/back.jpg) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.contact-box{
+    width: 65%;
+    box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 40px 0 40px 0;
+}
+
+.left{
+    height: 100%;
+    width: 100%;
+    background: url(./img/div-left.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px 0px 0px 0px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0px 0px 40px 0px;
+    padding: 50px 0;
+}
+
+form{
+    width: 290px;
+}
+
+.avatar{
+    width: 100px;
+}
+
+form h2{
+    color: #333;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.div-input{
+    position: relative;
+    width: 100%;
+    margin: 60px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.div-input:before, .div-input:after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #aa579f;
+    position: absolute;
+    bottom: -2px;
+    transition: .3s;
+}
+
+.div-input:before{
+    right: 50%;
+}
+
+.div-input:after{
+    left: 50%;
+}
+
+.div-input.focus:before, 
+.div-input.focus:after{
+    width: 50%;
+}
+.input{
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+.div-input .icon{
+    width: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+.div-input h5 {
+    position: absolute;
+    left: 33px;
+    bottom: 1px;
+    font-size: 18px;
+    color: #d9d9d9;
+    transition: .3s;
+}
+
+.div-input.focus h5{
+    bottom: 27px;
+    font-size: 14px;
+    color: #aa579f;
+    opacity: 0.6;
+}
+
+
+button{
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    color:#fff;
+    cursor: pointer;
+
+    background-image: linear-gradient(to right, #ef89cb, #aa579f, #ef89cb);
+    background-size: 200%;
+
+    transition: 0.5s;
+
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+    background-position: right;
+}
+
+
+
+

@@ -93,13 +93,19 @@ form h2{
 .div-input.focus:after{
     width: 50%;
 }
+
 .input{
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 90%;
+    height: 30px;
     padding: 0.2rem 0.5rem;
-    width: 100%;
-    outline: none;
+    background-color: transparent;
     border: none;
-    margin-left: 25px;
+    outline: none;
     font-size: 18px;
+    color: #333;
 }
 
 .div-input .icon{
@@ -116,13 +122,16 @@ form h2{
     font-size: 18px;
     color: #d9d9d9;
     transition: .3s;
+    z-index: 0;
+    user-select: none;
 }
 
 .div-input.focus h5{
-    bottom: 27px;
+    bottom: 30px;
     font-size: 14px;
     color: #aa579f;
     opacity: 0.6;
+    z-index: 0;
 }
 
 

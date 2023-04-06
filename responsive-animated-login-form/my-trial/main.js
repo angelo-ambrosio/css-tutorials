@@ -16,3 +16,11 @@ inputs.forEach(input => {
     input.addEventListener('focus', focusOn)
     input.addEventListener('blur', focusOff)
 })
+
+//FUNCTION PARA NOME SER CLICÁVEL
+
+const inputTitles = document.querySelectorAll('h5')
+
+inputTitles.addEventListener('click', () => {
+    this.parentNode.classList.add('focus')
+})

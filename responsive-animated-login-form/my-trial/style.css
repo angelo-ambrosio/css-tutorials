@@ -68,6 +68,7 @@ form h2{
     position: relative;
     width: 100%;
     margin: 60px 0;
+    padding: 10px 0;
     border-bottom: 2px solid #d9d9d9;
 }
 
@@ -122,7 +123,6 @@ form h2{
     font-size: 18px;
     color: #d9d9d9;
     transition: .3s;
-    z-index: 0;
     user-select: none;
 }
 
@@ -131,7 +131,6 @@ form h2{
     font-size: 14px;
     color: #aa579f;
     opacity: 0.6;
-    z-index: 0;
 }
 
 
@@ -160,6 +159,28 @@ button:hover{
     background-position: right;
 }
 
+@media screen and (max-width: 1000px){
+    .contact-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 80%;
+        background: url(./img/back.jpg) no-repeat;
+        background-position: center bottom;
+    }
+
+    .input{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    form {
+        width: 180px;
+    }
+
+    .input{
+        font-size: 10px;
+    }
+}
 
 
 

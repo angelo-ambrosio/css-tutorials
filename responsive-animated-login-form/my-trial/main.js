@@ -1,5 +1,15 @@
 const inputs = document.querySelectorAll('.input')
 
+function changeIcon(){
+    if(iconGrey.parentNode.classList.includes('focus')){
+        iconGrey.classList.add('hidden')
+        iconPurple.classList.remove('hidden')
+    } else {
+        iconGrey.classList.remove('hidden')
+        iconPurple.classList.add('hidden')
+    }
+}
+
 function focusOn(){
     let parent = this.parentNode;
     parent.classList.add('focus')
@@ -15,12 +25,4 @@ function focusOff(){
 inputs.forEach(input => {
     input.addEventListener('focus', focusOn)
     input.addEventListener('blur', focusOff)
-})
-
-//FUNCTION PARA NOME SER CLICÁVEL
-
-const inputTitles = document.querySelectorAll('h5')
-
-inputTitles.addEventListener('click', () => {
-    this.parentNode.classList.add('focus')
 })
